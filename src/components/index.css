@@ -1,9 +1,12 @@
 .header {
 	background-image: url('../assets/images/bg-desktop-light.jpg');
 	height: 300px;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
 }
 
 .header-title {
@@ -13,10 +16,9 @@
 	align-items: center;
 	width: 541px;
 	padding-top: 70px;
-	padding-left: 450px;
 }
 .title {
-	color: white;
+	color: var(--text-primary);
 	letter-spacing: 15px;
 	font-weight: bold;
 	font-size: 40px;
@@ -24,15 +26,18 @@
 .moon-icon {
 	height: 26px;
 }
+.moon-icon:hover {
+	cursor: pointer;
+}
+.moon-icon:active {
+	animation: App-logo-spin 5s linear infinite;
+}
 
 .input-container {
-	position: absolute;
-	top: 153px;
 	width: 540px;
 	height: 64px;
-	background-color: white;
+	background-color: var(--container-background);
 	border-radius: 5px;
-	left: 445px;
 	display: flex;
 	flex-direction: row;
 
@@ -49,6 +54,7 @@
 .input-field {
 	border: none;
 	font-size: 18px;
+	color: var(--text-secondary);
 	font-family: 'Josefin Sans', sans-serif;
 }
 .input-field:focus {
@@ -56,24 +62,19 @@
 }
 
 @media only screen and (max-width: 767px) {
-	.background-image {
+	.header {
 		background-image: url('../assets/images/bg-mobile-light.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 	.header-title {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		width: 80vw;
-		padding-top: 40px;
-		padding-left: 20px;
-		padding-right: 20px;
+		width: 327px;
+		height: 20px;
 	}
 	.title {
-		color: white;
+		color: var(--text-primary);
 		letter-spacing: 15px;
 		font-weight: bold;
 		font-size: 30px;
@@ -82,22 +83,14 @@
 		height: 20px;
 	}
 	.input-container {
-		position: absolute;
-		top: 153px;
 		width: 327px;
 		height: 48px;
-		background-color: white;
 		border-radius: 5px;
-		left: 24px;
-		display: flex;
-		flex-direction: row;
-
-		align-items: center;
+		margin-top: 40px;
 	}
 	.circle {
 		height: 20px;
 		width: 20px;
-		border: 1px solid #e3e4f1;
 		border-radius: 50%;
 		margin: 0 20px;
 	}
@@ -106,5 +99,13 @@
 		border: none;
 		font-size: 12px;
 		font-family: 'Josefin Sans', sans-serif;
+	}
+}
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }

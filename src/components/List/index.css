@@ -1,0 +1,77 @@
+.container {
+	background-color: white;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	width: 540px;
+	margin: -50px auto;
+}
+
+.list-container {
+	height: 65px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.list-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list-item div,
+p:hover {
+	cursor: pointer;
+}
+.cross-icon {
+	justify-content: flex-end;
+	margin-right: 20px;
+	height: 18px;
+}
+.cross-icon:hover {
+	cursor: pointer;
+}
+
+.btn {
+	border: none;
+}
+
+.list-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.list-info__text {
+	font-size: 14px;
+	color: #9495a5;
+	margin-left: 20px;
+}
+
+.btn-container__desktop {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.btn {
+	background-color: white;
+	margin-right: 20px;
+	color: #9495a5;
+}
+button:hover {
+	color: var(--btn-hover);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		width: 320px;
+	}
+	.btn-container__desktop {
+		visibility: hidden;
+	}
+}
