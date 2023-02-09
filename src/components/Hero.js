@@ -21,7 +21,7 @@ export const Hero = (props) => {
 	};
 
 	return (
-		<div className='header'>
+		<div className={`header ${theme}`} >
 			<div className='header-title'>
 				<h1 className='title'>TODO</h1>
 				<img
