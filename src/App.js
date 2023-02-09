@@ -1,3 +1,10 @@
+import { Hero } from './components/Hero.js';
+import React from 'react';
+
 export const App = () => {
-	return <div>sfds</div>;
+	return (
+		<div>
+			<Hero></Hero>
+		</div>
+	);
 };
