@@ -1,6 +1,12 @@
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
+
+}
+.app {
+  background-color: var(--background);
+  height: 100vh;
+
 }
 
 code {
@@ -23,7 +29,7 @@ code {
 	--background: #121212;
   --container-background: #393A4B;
 	--text-primary: white;
-	--text-secondary: grey;
+	--text-secondary: white;
   --btn-primary: royalblue;
   --btn-secondary: #9495a5;
   --btn-hover: white;

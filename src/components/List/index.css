@@ -1,5 +1,5 @@
 .container {
-	background-color: white;
+	background-color: var(--container-background);
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	width: 540px;
@@ -14,12 +14,16 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	background-color: var(--container-background);
 }
 .list-item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+}
+.list-item p {
+	color: var(--text-secondary);
 }
 
 .list-item div,
@@ -58,7 +62,7 @@ p:hover {
 }
 
 .btn {
-	background-color: white;
+	background-color: var(--container-background);
 	margin-right: 20px;
 	color: #9495a5;
 }

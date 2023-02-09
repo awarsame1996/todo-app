@@ -55,6 +55,8 @@
 	border: none;
 	font-size: 18px;
 	color: var(--text-secondary);
+	background-color: var(--container-background);
+
 	font-family: 'Josefin Sans', sans-serif;
 }
 .input-field:focus {

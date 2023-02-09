@@ -6,7 +6,7 @@ const Button = ({ text, isActive, setActive }) => {
 	return (
 		<button
 			style={{
-				backgroundColor: 'white',
+				backgroundColor: 'var(--container-background)',
 				color: isActive ? 'blue' : 'lightgray',
 				border: 'none',
 				borderRadius: 'none',

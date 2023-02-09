@@ -5,22 +5,23 @@ import { useState } from 'react';
 
 import './index.css';
 
-export const Hero = () => {
+export const Hero = (props) => {
 	const [theme, setTheme] = useState('light');
 	const [imgSrc, setImgSrc] = useState(lightIcon);
 	const switchTheme = () => {
 		if (theme === 'light') {
 			setTheme('dark');
 			setImgSrc(darkIcon);
-			console.log(theme);
+			props.onThemeChange(theme);
 		} else {
 			setTheme('light');
 			setImgSrc(lightIcon);
+			props.onThemeChange(theme);
 		}
 	};
 
 	return (
-		<div className='header' data-theme={theme}>
+		<div className='header'>
 			<div className='header-title'>
 				<h1 className='title'>TODO</h1>
 				<img
