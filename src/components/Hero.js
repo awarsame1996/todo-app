@@ -4,6 +4,7 @@ import lightIcon from '../assets/images/icon-light.svg';
 import { useState } from 'react';
 
 import './index.css';
+import { TodoInput } from './todoForm';
 
 export const Hero = (props) => {
 	const [theme, setTheme] = useState('light');
@@ -13,6 +14,7 @@ export const Hero = (props) => {
 			setTheme('dark');
 			setImgSrc(darkIcon);
 			props.onThemeChange(theme);
+			console.log(props);
 		} else {
 			setTheme('light');
 			setImgSrc(lightIcon);
@@ -21,7 +23,7 @@ export const Hero = (props) => {
 	};
 
 	return (
-		<div className={`header ${theme}`} >
+		<div className={`header ${theme}`}>
 			<div className='header-title'>
 				<h1 className='title'>TODO</h1>
 				<img
@@ -33,11 +35,7 @@ export const Hero = (props) => {
 			</div>
 			<div className='input-container'>
 				<div className='circle'></div>
-				<input
-					className='input-field'
-					type='text'
-					placeholder='Create a new todo...'
-				/>
+				<TodoInput />
 			</div>
 		</div>
 	);

@@ -23,7 +23,7 @@ code {
   --btn-primary: royalblue;
   --btn-secondary: #9495a5;
   --btn-hover: black;
-	--accent: purple;
+
 }
 [data-theme='dark'] {
 	--background: #121212;
@@ -33,5 +33,5 @@ code {
   --btn-primary: royalblue;
   --btn-secondary: #9495a5;
   --btn-hover: white;
-	--accent: darkred;
+
 }
